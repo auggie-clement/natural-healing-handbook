@@ -11,7 +11,7 @@ export const SummaryBox: React.FC = () => {
         <div className="space-y-2">
             <h3 className="font-bold text-brand-darkGreen text-sm uppercase tracking-wider">Quick Summary</h3>
             <p className="text-ink/80 text-base md:text-lg leading-relaxed">
-                If you’ve ever wondered whether natural approaches could hold their own against modern medicine, you’re not alone. Like many people over 50, I was starting to wonder if there were time-tested ways to feel better in my own body. Then I found <strong>The Natural Healing Handbook</strong> by Shanon Greef. It reshaped how I view natural healing. Keep reading for 10 reasons this old-meets-new guide has thousands over 50 rethinking what’s possible in 2025.
+                If you've ever felt overwhelmed by conflicting natural remedy advice—or scared of making the wrong call when someone you love isn't feeling well—you're not alone. Like thousands of health-conscious caregivers, I spent years collecting screenshots, bookmarking blogs, and still feeling unsure at 2 AM. Then I discovered a safety-first system that tells you what to try, what to avoid, and exactly when to get professional help. Keep reading for 10 reasons this old-meets-new guide is changing how families handle common health concerns in 2026.
             </p>
         </div>
       </div>

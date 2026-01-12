@@ -10,8 +10,8 @@ import { Container } from '../components/presales/ui/Container';
 
 export default function PreSalesPage() {
   const authorData = {
-    name: "Nancy Porter",
-    role: "Health Contributor"
+    name: "Dr. Elara Vance",
+    role: "Family Wellness Researcher"
   };
 
   return (
@@ -37,7 +37,7 @@ export default function PreSalesPage() {
         <Container size="narrow">
             <ArticleHeader 
                 author={authorData}
-                updatedDate="June 24, 2025"
+                updatedDate="January 2026"
             />
             <SummaryBox />
             <ArticleContent />

@@ -11,14 +11,14 @@ interface ArticleHeaderProps {
 export const ArticleHeader: React.FC<ArticleHeaderProps> = ({ author, updatedDate }) => {
   return (
     <Card className="p-8 md:p-12 mb-12 text-center bg-gradient-to-b from-white to-slate-50 border-slate-200">
-      <Badge variant="accent" className="mb-6">Trending in Health</Badge>
+      <Badge variant="accent" className="mb-6">Ancient Apothecary</Badge>
       
       <h1 className="text-3xl md:text-5xl leading-tight font-serif font-bold text-ink mb-6 tracking-tight">
-        I Tried <span className="text-brand-green underline decoration-brand-green/30 underline-offset-4">Herbal Remedies for 30 Days</span> — Here’s What Really Changed
+        I Stopped Guessing About Kitchen Cabinet Remedies — Here Are the 10 Changes That Finally Made Me Confident
       </h1>
       
       <p className="text-lg md:text-xl text-ink-light font-serif mb-8 max-w-3xl mx-auto leading-relaxed">
-        Go beyond the supplement aisle. This $37 kitchen-counter handbook has sold thousands of copies to readers over 50 — and it’s packed with herbal combinations backed by modern studies.
+        Skip the conflicting advice. This $37 field manual has helped thousands of caregivers make calmer decisions—backed by traditional wisdom and modern safety protocols.
       </p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 border-t border-slate-200 pt-8 mt-8 max-w-2xl mx-auto">

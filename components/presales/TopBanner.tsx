@@ -9,9 +9,8 @@ export const TopBanner: React.FC = () => {
         <div className="flex items-center justify-center gap-3 text-center text-xs md:text-sm font-medium tracking-wide">
           <Gift className="w-4 h-4 text-brand-mint/80 hidden sm:block" />
           <span className="flex items-center gap-2">
-             <span className="bg-brand-red px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider shadow-sm">Sale</span>
-             <span>Early Christmas Sale: <span className="font-bold text-white">80% OFF</span> + 2 Free Gifts.</span>
-             <span className="opacity-80 hidden sm:inline">Limited Stocks Available.</span>
+             <span className="bg-brand-red px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider shadow-sm">New Year</span>
+             <span>🎉 NEW YEAR SPECIAL — <span className="font-bold text-white">GET 75% OFF + 2 FREE BONUS GUIDES</span> — LIMITED TIME! 🎁</span>
           </span>
         </div>
       </Container>

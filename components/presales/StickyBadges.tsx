@@ -10,7 +10,7 @@ export const StickyBadges: React.FC = () => {
       <div className="fixed top-14 left-0 right-0 z-40 flex justify-center pointer-events-none">
         <div className="bg-white/95 backdrop-blur border border-brand-blue/30 text-ink text-xs md:text-sm font-medium py-1.5 px-4 rounded-full shadow-lg flex items-center gap-2 animate-fade-in-down pointer-events-auto cursor-pointer hover:bg-blue-50 transition-colors ring-1 ring-black/5">
           <Eye className="w-4 h-4 text-brand-blue" />
-          <span><span className="font-bold text-brand-blue">100+</span> viewing now</span>
+          <span>🔴 <span className="font-bold text-brand-blue">87</span> people viewing this page right now</span>
         </div>
       </div>
 
