@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Lock,
-  Lightbulb,
-  Check,
-  Truck,
-  ShieldCheck,
-  CreditCard,
-} from "lucide-react";
+import { Lock, Check, Truck, ShieldCheck, CreditCard } from "lucide-react";
 import { FeatureBlock } from "./ui/FeatureBlock";
 import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
@@ -327,29 +320,6 @@ export const ArticleContent: React.FC = () => {
             experiment—and it's already paid for itself.
           </p>
         </FeatureBlock>
-      </div>
-
-      {/* Taste Inside Section */}
-      <div className="py-12 text-center">
-        <div className="inline-flex items-center gap-2 mb-6 bg-yellow-50 px-4 py-2 rounded-full border border-yellow-100">
-          <Lightbulb className="w-5 h-5 text-yellow-600 fill-current" />
-          <span className="font-bold text-yellow-900 text-sm">Preview</span>
-        </div>
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink mb-6">
-          Here’s a Taste of What You’ll Find Inside
-        </h2>
-        <p className="text-ink-light max-w-2xl mx-auto mb-12 text-lg">
-          Preview the 3-Layer Safety-First System, symptom index, and kitchen
-          counter remedies laid out for quick decisions.
-        </p>
-        <Card className="shadow-2xl border-slate-200">
-          <img
-            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2000&auto=format&fit=crop"
-            alt="Recipe preview"
-            className="w-full h-auto"
-            loading="lazy"
-          />
-        </Card>
       </div>
 
       {/* OFFER SECTION REFACTOR */}
