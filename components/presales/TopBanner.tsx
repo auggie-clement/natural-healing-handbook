@@ -1,17 +1,13 @@
 import React from 'react';
-import { Gift } from 'lucide-react';
 import { Container } from './ui/Container';
+import { FINAL_PAGE_COPY } from './finalPageCopy';
 
 export const TopBanner: React.FC = () => {
   return (
     <div className="bg-brand-darkGreen/95 backdrop-blur-sm text-white py-2.5 sticky top-0 z-50 border-b border-brand-green/30 shadow-sm">
       <Container>
-        <div className="flex items-center justify-center gap-3 text-center text-xs md:text-sm font-medium tracking-wide">
-          <Gift className="w-4 h-4 text-brand-mint/80 hidden sm:block" />
-          <span className="flex items-center gap-2">
-             <span className="bg-brand-red px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider shadow-sm">New Year</span>
-             <span>🎉 NEW YEAR SPECIAL — <span className="font-bold text-white">GET 75% OFF + 2 FREE BONUS GUIDES</span> — LIMITED TIME! 🎁</span>
-          </span>
+        <div className="flex items-center justify-center text-center text-xs md:text-sm font-medium tracking-wide">
+          <span>{FINAL_PAGE_COPY.topBannerText}</span>
         </div>
       </Container>
     </div>
