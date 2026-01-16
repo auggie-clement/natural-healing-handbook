@@ -19,7 +19,7 @@ import { Button } from './components/ui/Button';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-brand-cream text-brand-text pb-24 md:pb-0">
+    <div className="min-h-screen flex flex-col font-inter bg-surface-subtle text-brand-text pb-24 md:pb-0 selection:bg-brand-green/20 selection:text-brand-darkGreen">
       <TopBanner />
       <ShippingBanner />
       <Header />
