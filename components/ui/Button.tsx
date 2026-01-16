@@ -31,19 +31,20 @@ export const Button: React.FC<ButtonProps> = (props) => {
   } = props as ButtonProps;
 
   const base =
-    "inline-flex items-center justify-center gap-2 rounded-full font-bold tracking-wide select-none " +
-    "transition-all duration-300 active:scale-[0.98] " +
-    "focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary/20 " +
-    "focus-visible:ring-offset-2 focus-visible:ring-offset-brand-cream " +
+    "inline-flex items-center justify-center gap-2 rounded-xl font-bold tracking-wide select-none leading-none " +
+    "transition-all duration-200 transform " +
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green/30 " +
+    "focus-visible:ring-offset-2 focus-visible:ring-offset-surface-subtle " +
     "disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100";
 
   const variants: Record<NonNullable<CommonProps['variant']>, string> = {
     primary:
-      "bg-brand-primary text-white shadow-soft border border-transparent " +
-      "hover:bg-brand-dark hover:shadow-soft-lg hover:-translate-y-0.5",
+      "bg-gradient-to-b from-[#3ebf4f] to-brand-green text-white shadow-lg border-b-4 border-brand-darkGreen " +
+      "hover:from-[#46d258] hover:to-[#34a048] hover:shadow-green-900/20 hover:-translate-y-0.5 " +
+      "active:border-b-0 active:translate-y-0.5",
     secondary:
-      "bg-white text-brand-dark border border-brand-border shadow-card " +
-      "hover:bg-brand-light hover:border-brand-primary/30 hover:-translate-y-0.5",
+      "bg-white text-ink border-2 border-slate-200 shadow-sm " +
+      "hover:border-slate-300 hover:bg-slate-50 hover:-translate-y-0.5 active:scale-[0.98]",
     danger:
       "bg-brand-accent text-white shadow-soft border border-transparent " +
       "hover:bg-orange-800 hover:shadow-soft-lg hover:-translate-y-0.5",

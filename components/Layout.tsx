@@ -5,16 +5,18 @@ import { cn } from "../utils/cn";
 
 export const TopBanner: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-brand-dark to-brand-primary text-white text-xs sm:text-sm py-2 text-center font-bold px-4 tracking-wide">
-      🎄 EARLY CHRISTMAS SALE — TODAY ONLY: GET UP TO 50% OFF + 2 FREE GIFTS!
+    <div className="bg-brand-darkGreen/95 backdrop-blur-sm text-white py-2.5 text-center text-xs sm:text-sm font-medium px-4 tracking-wide border-b border-brand-green/30 shadow-sm">
+      🎉 LIMITED-TIME SPECIAL — TODAY ONLY: GET UP TO 50% OFF + 2 FREE GIFTS!
     </div>
   );
 };
 
 export const ShippingBanner: React.FC = () => {
   return (
-    <div className="bg-brand-accent text-white text-xs sm:text-sm py-2 text-center font-medium px-4 shadow-sm relative z-50">
-      Just $37 (Reg. $60) • Over 50,000 Copies Sold • Ships in 3-5 Days
+    <div className="bg-white text-ink text-xs sm:text-sm py-2 text-center font-semibold px-4 shadow-sm relative z-50 border-b border-brand-border">
+      <span className="font-extrabold" style={{ color: '#228B22' }}>$37 Today</span>
+      <span className="text-ink-light"> (Bundle Value $105)</span>
+      <span className="text-ink-light"> • Over 50,000 Copies Sold • Ships in 3-5 Days</span>
     </div>
   );
 };
@@ -91,6 +93,7 @@ export const Header: React.FC = () => {
           <Button
             as="a"
             href="#offer"
+            variant="secondary"
             size="sm"
             className="hidden sm:inline-flex"
           >
@@ -145,9 +148,9 @@ export const StickyFooter: React.FC = () => {
         <div className="w-full sm:w-auto flex items-center gap-4">
           <div className="hidden sm:block text-right leading-tight">
             <span className="block text-xs text-brand-muted line-through">
-              $60.00
+              $105.00
             </span>
-            <span className="block font-extrabold text-brand-accent text-xl">
+            <span className="block font-extrabold text-xl" style={{ color: '#228B22' }}>
               $37.00
             </span>
           </div>

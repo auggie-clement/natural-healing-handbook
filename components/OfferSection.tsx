@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, ShieldCheck, CreditCard, Sparkles } from 'lucide-react';
+import { Check, ShieldCheck, Sparkles } from 'lucide-react';
 import { Button } from './ui/Button';
 
 export const Guarantee: React.FC = () => {
@@ -25,6 +25,13 @@ export const Guarantee: React.FC = () => {
 };
 
 export const OfferCard: React.FC = () => {
+  // Keep the original offer economics, but present them in the same
+  // price/savings visual language as the PreSales page (readability + consistency).
+  const templatePriceGreen = '#228B22';
+  const templateStrikeGrey = '#999999';
+  const templateSavingsOrange = '#D35400';
+  const templateMutedGrey = '#666666';
+
   return (
     <section id="offer" className="section bg-brand-light/30">
       <div className="page-container">
@@ -86,30 +93,44 @@ export const OfferCard: React.FC = () => {
             </div>
 
             {/* Right Column (Pricing) */}
-            <div className="bg-brand-cream p-6 rounded-3xl text-center border border-brand-border shadow-soft h-full flex flex-col justify-center">
-                <div className="mb-6">
-                    <p className="text-xs font-extrabold tracking-widest text-brand-muted uppercase mb-2">Today's Price</p>
-                    <div className="flex items-center justify-center gap-3">
-                        <span className="text-5xl font-extrabold text-brand-dark tracking-tight">$37</span>
-                        <div className="flex flex-col items-start text-xs text-brand-muted">
-                            <span className="line-through decoration-brand-accent decoration-2 text-base">$105</span>
-                            <span className="text-brand-accent font-bold">(Save $68)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div className="pill bg-green-100 text-green-700 border-green-200 mb-6 mx-auto">
-                    High Demand: Few Left
+            <div className="bg-white p-6 rounded-3xl text-center border border-brand-border shadow-soft h-full flex flex-col justify-center">
+              <div className="mb-6">
+                <p className="text-xs font-extrabold tracking-widest text-brand-muted uppercase mb-2">Today's Price</p>
+
+                <div className="flex items-end justify-center gap-3 mb-3">
+                  <span
+                    className="text-xl md:text-2xl line-through decoration-2"
+                    style={{ color: templateStrikeGrey, textDecorationColor: templateStrikeGrey }}
+                  >
+                    $105
+                  </span>
+                  <span
+                    className="text-3xl md:text-4xl font-black tracking-tight"
+                    style={{ color: templatePriceGreen }}
+                  >
+                    $37 TODAY ONLY
+                  </span>
                 </div>
 
-                <Button as="a" href="#offer" variant="primary" size="xl" fullWidth className="shadow-lg mb-4 text-lg">
-                    SEND ME MY COPY
-                </Button>
-                
-                <div className="flex justify-center items-center gap-2 opacity-70">
-                    <CreditCard size={16} />
-                    <span className="text-xs font-mono text-brand-muted">Secure Payment</span>
-                </div>
+                <p className="text-sm md:text-base font-medium mb-2" style={{ color: templateSavingsOrange }}>
+                  Save $68 — Limited Time
+                </p>
+                <p className="text-sm" style={{ color: templateMutedGrey }}>
+                  + Shipping calculated at checkout
+                </p>
+              </div>
+
+              <div className="pill bg-green-50 text-green-800 border-green-200 mb-6 mx-auto">
+                High Demand: Few Left
+              </div>
+
+              <Button as="a" href="#offer" variant="primary" size="xl" fullWidth className="shadow-lg mb-3 text-lg">
+                SEND ME MY COPY
+              </Button>
+
+              <p className="text-xs" style={{ color: templateMutedGrey }}>
+                🔒 Secure checkout • Encrypted payments • 60-day guarantee
+              </p>
             </div>
 
           </div>
